@@ -1,0 +1,41 @@
+/* *{box-sizing:border-box;margin:0;padding:0}
+:root{--pink:#ff4f81;--purple:#7c4dff;--dark:#251c35;--muted:#746d80;--white:#fff}
+body{min-height:100vh;font-family:"DM Sans",sans-serif;color:var(--dark);overflow-x:hidden;background:linear-gradient(135deg,#fff1f6 0%,#f5f0ff 50%,#eef8ff 100%)}
+.background{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.balloon{position:absolute;font-size:70px;opacity:.72;animation:float 5s ease-in-out infinite}
+.b1{left:4%;top:10%}.b2{right:5%;top:18%;animation-delay:1s}.b3{left:10%;bottom:8%;font-size:52px;animation-delay:2s}.b4{right:10%;bottom:7%;font-size:52px;animation-delay:3s}
+.confetti{position:absolute;font-size:28px;color:#ff7199;animation:spin 4s linear infinite}.c1{left:20%;top:8%}.c2{right:22%;top:9%;color:#8b68ff}.c3{left:8%;top:50%;color:#ffc857}.c4{right:8%;top:55%;color:#5bc0eb}
+.page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:30px 16px;position:relative}
+.card{width:min(720px,100%);padding:48px 42px;background:rgba(255,255,255,.88);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.8);border-radius:30px;box-shadow:0 25px 70px rgba(77,44,111,.14);text-align:center;display:none;animation:appear .55s ease}
+.card.active{display:block}
+.cake{font-size:76px;line-height:1;margin-bottom:18px;filter:drop-shadow(0 12px 12px rgba(0,0,0,.1))}
+.cake.small{font-size:58px}
+.eyebrow{text-transform:uppercase;letter-spacing:3px;font-size:12px;font-weight:700;color:var(--pink);margin-bottom:13px}
+h1{font-family:Pacifico,cursive;font-size:clamp(42px,8vw,72px);font-weight:400;line-height:1.18;background:linear-gradient(90deg,#ff3f79,#8b5cf6);-webkit-background-clip:text;color:transparent;margin-bottom:20px}
+h2{font-size:clamp(32px,6vw,48px);margin-bottom:12px}
+.message{max-width:580px;margin:0 auto 30px;line-height:1.8;color:var(--muted);font-size:16px}
+.sub{color:var(--muted);margin-bottom:28px;line-height:1.6}
+button{font:inherit;border:0;cursor:pointer}
+.primary,.secondary{border-radius:15px;padding:15px 24px;font-weight:700;transition:.2s}
+.primary{color:#fff;background:linear-gradient(135deg,var(--pink),var(--purple));box-shadow:0 12px 25px rgba(124,77,255,.23)}
+.primary:hover{transform:translateY(-2px);box-shadow:0 16px 30px rgba(124,77,255,.3)}
+.secondary{background:#f2edff;color:#6743d9}
+.choice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:25px 0}
+.choice{padding:23px 12px;border-radius:20px;background:#fff;border:1px solid #eee8f6;box-shadow:0 8px 25px rgba(50,30,70,.06);transition:.2s;color:var(--dark)}
+.choice:hover{transform:translateY(-5px);border-color:#e0d5ff;box-shadow:0 14px 30px rgba(50,30,70,.1)}
+.choice span{display:block;font-size:34px;margin-bottom:9px}.choice strong{display:block}.choice small{display:block;color:#999;margin-top:5px}
+.wish-box{display:none;padding:22px;border-radius:18px;background:#fff4f8;border:1px solid #ffd7e4;line-height:1.7;margin-top:18px}.wish-box.show{display:block}
+.wish-box p{margin-bottom:16px}
+.party-buttons{height:110px;position:relative;display:flex;justify-content:center;align-items:center;gap:18px}
+.yes-btn,.no-btn{padding:15px 24px;border-radius:14px;font-weight:700;position:relative}
+.yes-btn{background:linear-gradient(135deg,#ff4f81,#ff7a59);color:#fff;box-shadow:0 10px 22px rgba(255,79,129,.22)}
+.no-btn{background:#f1edf4;color:#625b6c;transition:left .16s ease,top .16s ease;z-index:10}
+.tease{height:22px;color:var(--pink);font-weight:600;font-size:13px}
+form{max-width:500px;margin:0 auto;text-align:left}
+label{display:block;font-size:14px;font-weight:700;margin:17px 0;color:#443a50}
+input{display:block;width:100%;margin-top:8px;padding:15px 16px;border:1px solid #e4ddea;border-radius:13px;background:#fff;font:inherit;color:var(--dark);outline:none;transition:.2s}
+input:focus{border-color:#a47cff;box-shadow:0 0 0 4px rgba(124,77,255,.09)}
+form .primary{width:100%;margin-top:15px}.form-note{font-size:12px;color:#9a93a2;text-align:center;margin-top:12px}.status{text-align:center;margin-top:13px;font-size:14px;font-weight:600}.success-icon{font-size:78px;margin-bottom:15px}
+@keyframes appear{from{opacity:0;transform:translateY(18px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes float{50%{transform:translateY(-18px) rotate(4deg)}}@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:600px){.card{padding:38px 22px;border-radius:24px}.choice-grid{grid-template-columns:1fr}.choice{padding:17px}.balloon{font-size:45px}.b3,.b4{display:none}} */
